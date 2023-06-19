@@ -1,0 +1,231 @@
+vistoria As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =111
+        Width: =634
+        X: =6
+        Y: =6
+        ZIndex: =1
+
+    Label5_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(242, 239, 223, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =85
+        Size: =30
+        Text: ="Add Inspection"
+        Width: =323
+        X: =168
+        Y: =19
+        ZIndex: =2
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        ChevronBackground: =RGBA(30, 14, 91, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(30, 14, 91, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =70
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        Items: =vehicles
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(92, 74, 168, 1)
+        SelectionFill: =RGBA(30, 14, 91, 1)
+        Size: =21
+        Width: =264
+        X: =35
+        Y: =189
+        ZIndex: =3
+
+    Label6 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: =Dropdown1.Selected.'vehicle model'
+        Width: =250
+        X: =366
+        Y: =364
+        ZIndex: =4
+
+    Image4 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =193
+        Image: =If(Dropdown1.Selected.vehicle_type="truck",truck,'pngwing.com')
+        Width: =271
+        X: =345
+        Y: =171
+        ZIndex: =5
+
+    Label7 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Electrical system"
+        Width: =560
+        X: =80
+        Y: =504
+        ZIndex: =6
+
+    Label7_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Lighting"
+        Width: =560
+        X: =80
+        Y: =574
+        ZIndex: =7
+
+    Label7_2 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Engine"
+        Width: =560
+        X: =80
+        Y: =654
+        ZIndex: =8
+
+    Label7_3 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Tyres"
+        Width: =560
+        X: =80
+        Y: =732
+        ZIndex: =9
+
+    Toggle1 As toggleSwitch:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        FalseFill: =RGBA(128, 130, 133, 1)
+        FalseText: ="Não apto"
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Size: =21
+        TrueFill: =RGBA(30, 14, 91, 1)
+        TrueText: ="Apto"
+        Width: =261
+        X: =350
+        Y: =522
+        ZIndex: =10
+
+    Toggle1_1 As toggleSwitch:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        FalseFill: =RGBA(128, 130, 133, 1)
+        FalseText: ="Não apto"
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Size: =21
+        TrueFill: =RGBA(30, 14, 91, 1)
+        TrueText: ="Apto"
+        Width: =261
+        X: =350
+        Y: =588
+        ZIndex: =11
+
+    Toggle1_2 As toggleSwitch:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        FalseFill: =RGBA(128, 130, 133, 1)
+        FalseText: ="Não apto"
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Size: =21
+        TrueFill: =RGBA(30, 14, 91, 1)
+        TrueText: ="Apto"
+        Width: =261
+        X: =350
+        Y: =664
+        ZIndex: =12
+
+    Toggle1_3 As toggleSwitch:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        FalseFill: =RGBA(128, 130, 133, 1)
+        FalseText: ="Não apto"
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =52
+        Size: =21
+        TrueFill: =RGBA(30, 14, 91, 1)
+        TrueText: ="Apto"
+        Width: =261
+        X: =350
+        Y: =741
+        ZIndex: =13
+
+    TextInput1 As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        BorderThickness: =2
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: ="Type your observations"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =165
+        HoverBorderColor: =RGBA(92, 74, 168, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        Size: =20
+        Width: =505
+        X: =70
+        Y: =823
+        ZIndex: =14
+
+    Button2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(30, 14, 91, 1), -20%)
+        OnSelect: |
+            =Patch(
+              Inspection,
+              Defaults(Inspection),
+              {
+                'vehicle registration plate': Dropdown1.Selected.'vehicle registration plate',
+                electrical_system: Toggle1.Value,
+                lighting: Toggle1_1.Value,
+                engine: Toggle1_2.Value,
+                tires: Toggle1_3.Value,
+                comments: TextInput1.Text
+              }
+            );
+            Notify("Inspection added",NotificationType.Success)
+        Size: =24
+        Text: ="Adicionar"
+        Width: =280
+        X: =189
+        Y: =1018
+        ZIndex: =15
+

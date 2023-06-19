@@ -1,0 +1,265 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "sharepointsites",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "sharepointsite",
+    "MaxGetRowsCount": 500,
+    "Name": "Sites do SharePoint",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Proprietário",
+      "absoluteurl": "URL Absoluta",
+      "createdby": "Criada por",
+      "createdon": "Data de Criação",
+      "createdonbehalfby": "Criado por (Delegado)",
+      "description": "Descrição",
+      "exchangerate": "Taxa de Câmbio",
+      "importsequencenumber": "Número de Sequência de Importação",
+      "isdefault": "Site Padrão",
+      "isgridpresent": "A lista de componentes foi instalada",
+      "ispowerbisite": "Permitir Inserção de Relatórios do Power BI",
+      "lastvalidated": "Data da Última Validação",
+      "modifiedby": "Modificado por",
+      "modifiedon": "Data de Modificação",
+      "modifiedonbehalfby": "Modificado por (Delegado)",
+      "name": "Nome",
+      "overriddencreatedon": "Registro Criado em",
+      "owningbusinessunit": "Unidade de Negócios Proprietária",
+      "owningteam": "Equipe Proprietária",
+      "owninguser": "Usuário Proprietário",
+      "parentsite": "Site Primário",
+      "relativeurl": "URL Relativa",
+      "servicetype": "Tipo de Serviço",
+      "sharepointdocumentlocation_parent_sharepointsite": "Locais de Documentos",
+      "SharePointSite_AsyncOperations": "Trabalhos do Sistema",
+      "SharePointSite_DuplicateBaseRecord": "Registros Duplicados (SharePointSite_DuplicateBaseRecord)",
+      "SharePointSite_DuplicateMatchingRecord": "Registros Duplicados (SharePointSite_DuplicateMatchingRecord)",
+      "sharepointsite_parentsite_sharepointsite": "Sites do SharePoint",
+      "sharepointsite_principalobjectattributeaccess": "Compartilhamento de Campo",
+      "SharePointSite_ProcessSessions": "Sessões de Processo",
+      "SharePointSite_SyncErrors": "Erros de Sincronização",
+      "sharepointsiteid": "ID de Site do SharePoint",
+      "sitecollectionid": "SiteCollectionId",
+      "statecode": "Status",
+      "statuscode": "Razão do Status",
+      "timezoneruleversionnumber": "TimeZoneRuleVersionNumber",
+      "transactioncurrencyid": "Moeda",
+      "userid": "Proprietário de Site do SharePoint",
+      "utcconversiontimezonecode": "UTCConversionTimeZoneCode",
+      "validationstatus": "Último Status de Validação",
+      "validationstatuserrorcode": "Informações Adicionais",
+      "versionnumber": "VersionNumber"
+    },
+    "PreferredName": "Sites do SharePoint",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Sites do SharePoint (Modos de exibição)",
+    "Name": "_sharepointsite_views",
+    "RelatedEntityName": "Sites do SharePoint",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "519a30fa-6d4a-4a9d-befe-2b08c9429e87": "Exibição de Pesquisa de Site do SharePoint",
+      "76251bbd-bc73-41d1-ae97-37c361b542f9": "Todos os Sites do SharePoint",
+      "8735625e-5657-df11-a5a2-00155d2a9005": "Meus Sites do SharePoint Ativos",
+      "9d844e0d-5657-df11-a5a2-00155d2a9005": "Sites do SharePoint Inativos",
+      "a529f7aa-f755-41bf-92ec-5a89174bec15": "Exibição de Localização Avançada de Sites do SharePoint",
+      "df2fe6da-f97f-4878-80b6-8deb7d9d6a09": "Exibição Associada de Site do SharePoint",
+      "ef773df3-5557-df11-a5a2-00155d2a9005": "Sites Ativos do SharePoint"
+    }
+  },
+  {
+    "DisplayName": "Status de Validação",
+    "Name": "sharepoint_validationstatus",
+    "OptionSetInfoNameMapping": {
+      "1": "Não Validado",
+      "2": "Em Andamento",
+      "3": "Inválido",
+      "4": "Válido",
+      "5": "Não foi possível validar"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "validationstatus",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "validationstatus",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Motivo do Status de Validação",
+    "Name": "sharepoint_validationstatusreason",
+    "OptionSetInfoNameMapping": {
+      "1": "A URL do registro não foi validada.",
+      "2": "A URL deste registro é válida.",
+      "3": "A URL deste registro não é válida.",
+      "4": "Os esquemas de URL do Microsoft Dynamics 365 e do SharePoint são diferentes.",
+      "5": "Não foi possível acessar a URL devido às configurações de segurança do Internet Explorer.",
+      "6": "Falha de autenticação.",
+      "7": "Certificados inválidos."
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "validationstatuserrorcode",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "validationstatuserrorcode",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Entidade da Estrutura de Pastas do SharePoint (Sites do SharePoint)",
+    "Name": "sharepointsite_folderstructureentity",
+    "OptionSetInfoNameMapping": {
+      "0": "Nenhum",
+      "1": "Conta",
+      "2": "Contato"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "folderstructureentity",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "EntityNameType",
+    "RelatedColumnInvariantName": "folderstructureentity",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Site Padrão (Sites do SharePoint)",
+    "Name": "sharepointsite_isdefault",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isdefault",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isdefault",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "A lista de componentes foi instalada (Sites do SharePoint)",
+    "Name": "sharepointsite_isgridpresent",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isgridpresent",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isgridpresent",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Permitir Inserção de Relatórios do Power BI (Sites do SharePoint)",
+    "Name": "sharepointsite_ispowerbisite",
+    "OptionSetInfoNameMapping": {
+      "0": "Não",
+      "1": "Sim"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispowerbisite",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispowerbisite",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ServiceType",
+    "Name": "sharepointsite_servicetype",
+    "OptionSetInfoNameMapping": {
+      "0": "SharePoint",
+      "1": "OneDrive",
+      "2": "Compartilhado comigo",
+      "3": "MS Teams"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "servicetype",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "servicetype",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Sites do SharePoint)",
+    "Name": "sharepointsite_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Ativa",
+      "1": "Inativa"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Razão do Status (Sites do SharePoint)",
+    "Name": "sharepointsite_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Ativa",
+      "2": "Inativa"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Sites do SharePoint"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Sites do SharePoint",
+    "Type": "OptionSetInfo"
+  }
+]

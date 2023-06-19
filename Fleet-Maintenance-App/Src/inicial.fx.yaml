@@ -1,0 +1,123 @@
+inicial As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Label1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(30, 14, 91, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =116
+        Size: =30
+        Text: ="Fleet Maintenance"
+        Width: =354
+        X: =143
+        Y: =632
+        ZIndex: =2
+
+    Image1 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =320
+        Image: |
+            =
+        Width: =320
+        X: =177
+        Y: =290
+        ZIndex: =3
+
+    Image2 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =59
+        Image: =
+        Width: =122
+        X: =120
+        Y: =573
+        ZIndex: =4
+
+    Circle1 As circle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =340
+        Width: =456
+        X: =94
+        Y: =307
+        ZIndex: =5
+
+    Image3 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =299
+        Image: =pngegg
+        Width: =426
+        X: =120
+        Y: =333
+        ZIndex: =6
+
+    Label2 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(30, 14, 91, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =62
+        Size: =21
+        Text: |-
+            =
+            User().FullName
+        Width: =300
+        X: =120
+        Y: =42
+        ZIndex: =7
+
+    Label3 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(30, 14, 91, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =22
+        Text: ="Welcome!"
+        Width: =560
+        X: =40
+        Y: =126
+        ZIndex: =8
+
+    Label4 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(30, 14, 91, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =66
+        Size: =21
+        Text: ="Hello,"
+        Width: =117
+        X: =40
+        Y: =42
+        ZIndex: =9
+
+    Button1 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(30, 14, 91, 1), -20%)
+        OnSelect: |
+            =Navigate(Frota)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Size: =24
+        Text: ="Access Fleet"
+        Width: =328
+        X: =169
+        Y: =829
+        ZIndex: =10
+

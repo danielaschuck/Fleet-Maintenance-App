@@ -1,0 +1,31 @@
+{
+  "76844d93-cb7f-4a3a-99d2-10c665016ce1": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://uerjbr.sharepoint.com/sites/fleetmaintenance": {
+        "dataSources": {
+          "Inspection": {
+            "tableName": "4126c671-fbfc-4f4f-83ed-96c0e1f5f3bb"
+          },
+          "vehicles": {
+            "tableName": "d59b720a-f858-4b95-9878-fae1c77a0b0e"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Inspection",
+      "vehicles"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "76844d93-cb7f-4a3a-99d2-10c665016ce1"
+  }
+}

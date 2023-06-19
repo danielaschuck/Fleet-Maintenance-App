@@ -1,0 +1,170 @@
+Frota As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Width: =640
+        Y: =5
+        ZIndex: =1
+
+    Label5 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(242, 239, 223, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =85
+        Size: =30
+        Text: ="Car fleet"
+        Width: =200
+        X: =196
+        Y: =12
+        ZIndex: =2
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DelayItemLoading: =true
+        Items: =vehicles
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =220
+        Y: =268
+        ZIndex: =3
+
+        Image5 As image:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =146
+            Image: |
+                =If(ThisItem.vehicle_type="CAR",'pngwing.com',truck)
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =154
+            ZIndex: =1
+
+        Title2 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =ThisItem.'vehicle model'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =173
+            Y: =28
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: =ThisItem.'vehicle registration plate'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =173
+            Y: =Title2.Y + Title2.Height
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="Exibir detalhes do item"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =174
+            ZIndex: =5
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(92, 74, 168, 1)
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =6
+
+        Image6 As image:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =85
+            Image: ='pngwing.com (1)'
+            OnSelect: =Select(Parent)
+            Visible: |
+                =If(ThisItem.Status="unable",true,false)
+            Width: =52
+            X: =109
+            ZIndex: =7
+
+    Icon1 As icon.Add:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =119
+        Icon: =Icon.BackArrow
+        OnSelect: |
+            =Navigate(inicial)
+        Width: =143
+        X: =17
+        Y: =987
+        ZIndex: =4
+
+    Icon2 As icon.Add:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =143
+        Icon: =Icon.Add
+        Width: =98
+        X: =478
+        Y: =972
+        ZIndex: =5
+
+    Circle2 As circle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        BorderThickness: =8
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =114
+        OnSelect: =Navigate(vistoria)
+        Width: =127
+        X: =464
+        Y: =987
+        ZIndex: =6
+
